@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newFragment"
+        android:title="New"
+        android:icon="@drawable/ic_new_icon"
+        />
+    <item
+        android:id="@+id/popularFragment"
+        android:title="Popular"
+        android:icon="@drawable/baseline_local_fire_department_24"
+        />
+</menu>
