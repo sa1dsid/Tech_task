@@ -7,12 +7,44 @@
 
     <fragment
         android:id="@+id/newFragment"
-        android:name="com.example.tech_task.NewFragment"
         android:label="@string/New"
-        tools:layout="@layout/fragment_new" />
+        tools:layout="@layout/fragment_new" >
+        <action
+            android:id="@+id/action_newFragment_to_detailFragment"
+            app:destination="@id/detailFragment">
+
+            <argument
+                android:name="image"
+                app:argType="string" />
+
+
+            <argument
+                android:name="description"
+                app:argType="string" />
+        </action>
+    </fragment>
+
     <fragment
         android:id="@+id/popularFragment"
         android:name="com.example.tech_task.PopularFragment"
         android:label="@string/Popular"
-        tools:layout="@layout/fragment_popular" />
+        tools:layout="@layout/fragment_popular" >
+        <action
+            android:id="@+id/action_popularFragment_to_detailFragment"
+            app:destination="@id/detailFragment">
+
+            <argument
+                android:name="image"
+                app:argType="string" />
+
+            <argument
+                android:name="description"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:label=""
+        tools:layout="@layout/fragment_info_screen" />
 </navigation>
